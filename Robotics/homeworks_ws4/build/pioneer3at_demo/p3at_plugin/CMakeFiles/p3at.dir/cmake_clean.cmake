@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/parsa/Projects/Robotics/homeworks_ws4/devel/lib/p3at_plugin/p3at"
-  "/home/parsa/Projects/Robotics/homeworks_ws4/devel/lib/p3at_plugin/p3at.pdb"
+  "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/lib/p3at_plugin/p3at"
+  "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/lib/p3at_plugin/p3at.pdb"
   "CMakeFiles/p3at.dir/src/p3at.cc.o"
 )
 

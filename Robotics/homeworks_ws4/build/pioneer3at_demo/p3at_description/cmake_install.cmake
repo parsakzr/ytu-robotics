@@ -1,8 +1,8 @@
-# Install script for directory: /home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description
+# Install script for directory: /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/Robotics/homeworks_ws4/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_description/catkin_generated/installspace/p3at_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_description/catkin_generated/installspace/p3at_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_description/cmake" TYPE FILE FILES
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_description/catkin_generated/installspace/p3at_descriptionConfig.cmake"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_description/catkin_generated/installspace/p3at_descriptionConfig-version.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_description/catkin_generated/installspace/p3at_descriptionConfig.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_description/catkin_generated/installspace/p3at_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_description" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_description" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_description" TYPE DIRECTORY FILES
-    "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/urdf"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/launch"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/meshes"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/urdf"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/launch"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_description/meshes"
     )
 endif()
 

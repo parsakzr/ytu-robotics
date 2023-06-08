@@ -1,2 +1,2 @@
 hector_nist_arenas_gazebo/hector_nist_arena_designer:hector_nist_arenas_gazebo/hector_nist_arena_elements:hector_nist_arenas_gazebo/hector_nist_arena_worlds:pioneer3at_demo/p3at_description:pioneer3at_demo/p3at_gazebo:pioneer3at_demo/p3at_plugin:proje
--DCATKIN_DEVEL_PREFIX=/home/parsa/Projects/Robotics/homeworks_ws4/devel -DCMAKE_INSTALL_PREFIX=/home/parsa/Projects/Robotics/homeworks_ws4/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel -DCMAKE_INSTALL_PREFIX=/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install -G Unix Makefiles

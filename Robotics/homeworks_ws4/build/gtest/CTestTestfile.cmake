@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
 # Source directory: /usr/src/googletest
-# Build directory: /home/parsa/Projects/Robotics/homeworks_ws4/build/gtest
+# Build directory: /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/gtest
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

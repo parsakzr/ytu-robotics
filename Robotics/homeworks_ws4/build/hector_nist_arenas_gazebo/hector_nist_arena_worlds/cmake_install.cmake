@@ -1,8 +1,8 @@
-# Install script for directory: /home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds
+# Install script for directory: /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/Robotics/homeworks_ws4/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,25 +38,25 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_worlds/catkin_generated/installspace/hector_nist_arena_worlds.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_worlds/catkin_generated/installspace/hector_nist_arena_worlds.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_worlds/cmake" TYPE FILE FILES
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_worlds/catkin_generated/installspace/hector_nist_arena_worldsConfig.cmake"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_worlds/catkin_generated/installspace/hector_nist_arena_worldsConfig-version.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_worlds/catkin_generated/installspace/hector_nist_arena_worldsConfig.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_worlds/catkin_generated/installspace/hector_nist_arena_worldsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_worlds" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_worlds" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_worlds" TYPE DIRECTORY FILES
-    "/home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/arenas"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/launch"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/worlds"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/arenas"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/launch"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_worlds/worlds"
     )
 endif()
 

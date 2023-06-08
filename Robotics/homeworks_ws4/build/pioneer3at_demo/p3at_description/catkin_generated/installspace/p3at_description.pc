@@ -1,4 +1,4 @@
-prefix=/home/parsa/Projects/Robotics/homeworks_ws4/install
+prefix=/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install
 
 Name: p3at_description
 Description: Description of p3at_description

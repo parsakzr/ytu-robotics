@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parsa/Projects/Robotics/homeworks_ws4/src
+CMAKE_SOURCE_DIR = /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parsa/Projects/Robotics/homeworks_ws4/build
+CMAKE_BINARY_DIR = /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build
 
 # Utility rule file for std_srvs_generate_messages_py.
 
@@ -63,10 +63,10 @@ hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generat
 .PHONY : hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generate_messages_py.dir/build
 
 hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generate_messages_py.dir/clean:
-	cd /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_elements && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_elements && $(CMAKE_COMMAND) -P CMakeFiles/std_srvs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generate_messages_py.dir/clean
 
 hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generate_messages_py.dir/depend:
-	cd /home/parsa/Projects/Robotics/homeworks_ws4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Projects/Robotics/homeworks_ws4/src /home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_elements /home/parsa/Projects/Robotics/homeworks_ws4/build /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_elements /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_elements /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_elements /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hector_nist_arenas_gazebo/hector_nist_arena_elements/CMakeFiles/std_srvs_generate_messages_py.dir/depend
 

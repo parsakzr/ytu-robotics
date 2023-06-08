@@ -1,8 +1,8 @@
-# Install script for directory: /home/parsa/Projects/Robotics/homeworks_ws4/src/proje
+# Install script for directory: /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/proje
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/Robotics/homeworks_ws4/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/build/proje/catkin_generated/installspace/proje.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/proje/catkin_generated/installspace/proje.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/proje/cmake" TYPE FILE FILES
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/proje/catkin_generated/installspace/projeConfig.cmake"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/proje/catkin_generated/installspace/projeConfig-version.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/proje/catkin_generated/installspace/projeConfig.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/proje/catkin_generated/installspace/projeConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/proje" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/src/proje/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/proje" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/proje/package.xml")
 endif()
 

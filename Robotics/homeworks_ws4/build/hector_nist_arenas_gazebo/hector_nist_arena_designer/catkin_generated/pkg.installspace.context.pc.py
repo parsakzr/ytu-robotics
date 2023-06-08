@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/usr/include/aarch64-linux-gnu/qt5/;/usr/incl
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "/usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.12.8;/usr/lib/aarch64-linux-gnu/libQt5Xml.so.5.12.8".split(';') if "/usr/lib/aarch64-linux-gnu/libQt5Widgets.so.5.12.8;/usr/lib/aarch64-linux-gnu/libQt5Xml.so.5.12.8" != "" else []
 PROJECT_NAME = "hector_nist_arena_designer"
-PROJECT_SPACE_DIR = "/home/parsa/Projects/Robotics/homeworks_ws4/install"
+PROJECT_SPACE_DIR = "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install"
 PROJECT_VERSION = "0.1.0"

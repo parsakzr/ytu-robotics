@@ -1,8 +1,8 @@
-# Install script for directory: /home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_gazebo
+# Install script for directory: /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_gazebo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/Robotics/homeworks_ws4/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_gazebo/catkin_generated/installspace/p3at_gazebo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_gazebo/catkin_generated/installspace/p3at_gazebo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_gazebo/cmake" TYPE FILE FILES
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_gazebo/catkin_generated/installspace/p3at_gazeboConfig.cmake"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_gazebo/catkin_generated/installspace/p3at_gazeboConfig-version.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_gazebo/catkin_generated/installspace/p3at_gazeboConfig.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_gazebo/catkin_generated/installspace/p3at_gazeboConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_gazebo" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_gazebo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_gazebo" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_gazebo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_gazebo" TYPE DIRECTORY FILES "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_gazebo/worlds")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/p3at_gazebo" TYPE DIRECTORY FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_gazebo/worlds")
 endif()
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/parsa/Projects/Robotics/homeworks_ws4/src/proje/src/trajectory.cpp" "/home/parsa/Projects/Robotics/homeworks_ws4/build/proje/CMakeFiles/trajectory.dir/src/trajectory.cpp.o"
+  "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/proje/src/trajectory.cpp" "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/proje/CMakeFiles/trajectory.dir/src/trajectory.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

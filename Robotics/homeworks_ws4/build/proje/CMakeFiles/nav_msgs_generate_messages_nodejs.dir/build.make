@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parsa/Projects/Robotics/homeworks_ws4/src
+CMAKE_SOURCE_DIR = /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parsa/Projects/Robotics/homeworks_ws4/build
+CMAKE_BINARY_DIR = /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build
 
 # Utility rule file for nav_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build: nav_msgs_generate_
 .PHONY : proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
 
 proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/parsa/Projects/Robotics/homeworks_ws4/build/proje && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/proje && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/clean
 
 proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/parsa/Projects/Robotics/homeworks_ws4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Projects/Robotics/homeworks_ws4/src /home/parsa/Projects/Robotics/homeworks_ws4/src/proje /home/parsa/Projects/Robotics/homeworks_ws4/build /home/parsa/Projects/Robotics/homeworks_ws4/build/proje /home/parsa/Projects/Robotics/homeworks_ws4/build/proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/proje /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/proje /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/depend
 

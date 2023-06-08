@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/parsa/Projects/Robotics/homeworks_ws4/devel/lib/proje/trajectory"
-  "/home/parsa/Projects/Robotics/homeworks_ws4/devel/lib/proje/trajectory.pdb"
+  "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/lib/proje/trajectory"
+  "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/lib/proje/trajectory.pdb"
   "CMakeFiles/trajectory.dir/src/trajectory.cpp.o"
 )
 

@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/parsa/Projects/Robotics/homeworks_ws4/src/proje/src/trajectory.cpp
+/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/proje/src/trajectory.cpp
 ros/ros.h
-/home/parsa/Projects/Robotics/homeworks_ws4/src/proje/src/ros/ros.h
+/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/proje/src/ros/ros.h
 nav_msgs/Odometry.h
-/home/parsa/Projects/Robotics/homeworks_ws4/src/proje/src/nav_msgs/Odometry.h
+/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/proje/src/nav_msgs/Odometry.h
 visualization_msgs/Marker.h
 -
 

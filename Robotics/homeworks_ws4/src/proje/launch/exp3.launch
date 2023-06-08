@@ -3,7 +3,7 @@
 
 	<node name="gazebo" pkg="gazebo_ros" type="gzserver" args="$(find hector_nist_arena_worlds)/worlds/exp3.world" /> 
 
-  	<node name="gazebo_gui" pkg="gazebo_ros" type="gzclient"/>
+  	<!-- <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient"/> -->
 
 	<include file="$(find p3at_description)/launch/spawn_p3at.launch">
 		<arg name="robot_name" value="rtg"/>

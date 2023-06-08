@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/parsa/Projects/Robotics/homeworks_ws4/src
+CMAKE_SOURCE_DIR = /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/parsa/Projects/Robotics/homeworks_ws4/build
+CMAKE_BINARY_DIR = /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build
 
 # Utility rule file for arena_designer_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/parsa/Projects/Robotics/homeworks_ws4/build
 include hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/progress.make
 
 hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/parsa/Projects/Robotics/homeworks_ws4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target arena_designer"
-	cd /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer && /usr/bin/cmake -E cmake_autogen /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/AutogenInfo.json ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target arena_designer"
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer && /usr/bin/cmake -E cmake_autogen /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/AutogenInfo.json ""
 
 arena_designer_autogen: hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen
 arena_designer_autogen: hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/build.make
@@ -68,10 +68,10 @@ hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_a
 .PHONY : hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/build
 
 hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/clean:
-	cd /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer && $(CMAKE_COMMAND) -P CMakeFiles/arena_designer_autogen.dir/cmake_clean.cmake
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer && $(CMAKE_COMMAND) -P CMakeFiles/arena_designer_autogen.dir/cmake_clean.cmake
 .PHONY : hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/clean
 
 hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/depend:
-	cd /home/parsa/Projects/Robotics/homeworks_ws4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Projects/Robotics/homeworks_ws4/src /home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer /home/parsa/Projects/Robotics/homeworks_ws4/build /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer /home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : hector_nist_arenas_gazebo/hector_nist_arena_designer/CMakeFiles/arena_designer_autogen.dir/depend
 

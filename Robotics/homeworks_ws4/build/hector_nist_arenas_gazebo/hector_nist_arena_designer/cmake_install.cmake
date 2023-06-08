@@ -1,8 +1,8 @@
-# Install script for directory: /home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer
+# Install script for directory: /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/Robotics/homeworks_ws4/install")
+  set(CMAKE_INSTALL_PREFIX "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,18 +38,18 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/catkin_generated/installspace/hector_nist_arena_designer.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/catkin_generated/installspace/hector_nist_arena_designer.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_designer/cmake" TYPE FILE FILES
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/catkin_generated/installspace/hector_nist_arena_designerConfig.cmake"
-    "/home/parsa/Projects/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/catkin_generated/installspace/hector_nist_arena_designerConfig-version.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/catkin_generated/installspace/hector_nist_arena_designerConfig.cmake"
+    "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/hector_nist_arenas_gazebo/hector_nist_arena_designer/catkin_generated/installspace/hector_nist_arena_designerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_designer" TYPE FILE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_designer" TYPE FILE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_nist_arena_designer/arena_designer"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_nist_arena_designer" TYPE EXECUTABLE FILES "/home/parsa/Projects/Robotics/homeworks_ws4/devel/lib/hector_nist_arena_designer/arena_designer")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/hector_nist_arena_designer" TYPE EXECUTABLE FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/lib/hector_nist_arena_designer/arena_designer")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_nist_arena_designer/arena_designer" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/hector_nist_arena_designer/arena_designer")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -69,6 +69,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_designer" TYPE DIRECTORY FILES "/home/parsa/Projects/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer/icons")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/hector_nist_arena_designer" TYPE DIRECTORY FILES "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/hector_nist_arenas_gazebo/hector_nist_arena_designer/icons")
 endif()
 

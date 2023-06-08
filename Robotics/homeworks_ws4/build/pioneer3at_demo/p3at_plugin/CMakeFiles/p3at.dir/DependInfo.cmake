@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_plugin/src/p3at.cc" "/home/parsa/Projects/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_plugin/CMakeFiles/p3at.dir/src/p3at.cc.o"
+  "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_plugin/src/p3at.cc" "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build/pioneer3at_demo/p3at_plugin/CMakeFiles/p3at.dir/src/p3at.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/parsa/Projects/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_plugin/include"
+  "/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src/pioneer3at_demo/p3at_plugin/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
