@@ -1,0 +1,8 @@
+prefix=/home/parsa/Projects/Robotics/homeworks_ws4/install
+
+Name: proje
+Description: Description of proje
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
