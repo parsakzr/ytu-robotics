@@ -7,7 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel:$CMAKE_PREFIX_PATH"
 export PWD='/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/share/common-lisp'
-export ROS_PACKAGE_PATH="/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src:$ROS_PACKAGE_PATH"
+export PYTHONPATH="/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/lib/python3/dist-packages:$PYTHONPATH"

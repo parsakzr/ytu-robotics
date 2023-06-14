@@ -56,6 +56,27 @@ CMAKE_BINARY_DIR = /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/buil
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -67,18 +88,6 @@ install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
 	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
 
 # Special rule for the target install
 install: preinstall
@@ -92,15 +101,17 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -123,17 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -183,49 +183,34 @@ trajectory/fast:
 .PHONY : trajectory/fast
 
 # Convenience name for target.
-proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
-	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
-.PHONY : proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+proje/CMakeFiles/proje_generate_messages_nodejs.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_generate_messages_nodejs.dir/rule
+.PHONY : proje/CMakeFiles/proje_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_py: proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+proje_generate_messages_nodejs: proje/CMakeFiles/proje_generate_messages_nodejs.dir/rule
 
-.PHONY : nav_msgs_generate_messages_py
+.PHONY : proje_generate_messages_nodejs
 
 # fast build rule for target.
-nav_msgs_generate_messages_py/fast:
-	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make proje/CMakeFiles/nav_msgs_generate_messages_py.dir/build
-.PHONY : nav_msgs_generate_messages_py/fast
+proje_generate_messages_nodejs/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_generate_messages_nodejs.dir/build.make proje/CMakeFiles/proje_generate_messages_nodejs.dir/build
+.PHONY : proje_generate_messages_nodejs/fast
 
 # Convenience name for target.
-proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
-.PHONY : proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+proje/CMakeFiles/proje_gennodejs.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_gennodejs.dir/rule
+.PHONY : proje/CMakeFiles/proje_gennodejs.dir/rule
 
 # Convenience name for target.
-nav_msgs_generate_messages_nodejs: proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+proje_gennodejs: proje/CMakeFiles/proje_gennodejs.dir/rule
 
-.PHONY : nav_msgs_generate_messages_nodejs
+.PHONY : proje_gennodejs
 
 # fast build rule for target.
-nav_msgs_generate_messages_nodejs/fast:
-	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
-.PHONY : nav_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
-	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-.PHONY : proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-nav_msgs_generate_messages_lisp: proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : nav_msgs_generate_messages_lisp
-
-# fast build rule for target.
-nav_msgs_generate_messages_lisp/fast:
-	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
-.PHONY : nav_msgs_generate_messages_lisp/fast
+proje_gennodejs/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_gennodejs.dir/build.make proje/CMakeFiles/proje_gennodejs.dir/build
+.PHONY : proje_gennodejs/fast
 
 # Convenience name for target.
 proje/CMakeFiles/nav_msgs_generate_messages_eus.dir/rule:
@@ -256,6 +241,201 @@ nav_msgs_generate_messages_cpp: proje/CMakeFiles/nav_msgs_generate_messages_cpp.
 nav_msgs_generate_messages_cpp/fast:
 	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build.make proje/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 .PHONY : nav_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+.PHONY : proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_lisp: proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : nav_msgs_generate_messages_lisp
+
+# fast build rule for target.
+nav_msgs_generate_messages_lisp/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build.make proje/CMakeFiles/nav_msgs_generate_messages_lisp.dir/build
+.PHONY : nav_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_generate_messages_eus.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_generate_messages_eus.dir/rule
+.PHONY : proje/CMakeFiles/proje_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+proje_generate_messages_eus: proje/CMakeFiles/proje_generate_messages_eus.dir/rule
+
+.PHONY : proje_generate_messages_eus
+
+# fast build rule for target.
+proje_generate_messages_eus/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_generate_messages_eus.dir/build.make proje/CMakeFiles/proje_generate_messages_eus.dir/build
+.PHONY : proje_generate_messages_eus/fast
+
+# Convenience name for target.
+proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+.PHONY : proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_nodejs: proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : nav_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+nav_msgs_generate_messages_nodejs/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build.make proje/CMakeFiles/nav_msgs_generate_messages_nodejs.dir/build
+.PHONY : nav_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+.PHONY : proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+nav_msgs_generate_messages_py: proje/CMakeFiles/nav_msgs_generate_messages_py.dir/rule
+
+.PHONY : nav_msgs_generate_messages_py
+
+# fast build rule for target.
+nav_msgs_generate_messages_py/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/nav_msgs_generate_messages_py.dir/build.make proje/CMakeFiles/nav_msgs_generate_messages_py.dir/build
+.PHONY : nav_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_generate_messages_py.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_generate_messages_py.dir/rule
+.PHONY : proje/CMakeFiles/proje_generate_messages_py.dir/rule
+
+# Convenience name for target.
+proje_generate_messages_py: proje/CMakeFiles/proje_generate_messages_py.dir/rule
+
+.PHONY : proje_generate_messages_py
+
+# fast build rule for target.
+proje_generate_messages_py/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_generate_messages_py.dir/build.make proje/CMakeFiles/proje_generate_messages_py.dir/build
+.PHONY : proje_generate_messages_py/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_generate_messages.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_generate_messages.dir/rule
+.PHONY : proje/CMakeFiles/proje_generate_messages.dir/rule
+
+# Convenience name for target.
+proje_generate_messages: proje/CMakeFiles/proje_generate_messages.dir/rule
+
+.PHONY : proje_generate_messages
+
+# fast build rule for target.
+proje_generate_messages/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_generate_messages.dir/build.make proje/CMakeFiles/proje_generate_messages.dir/build
+.PHONY : proje_generate_messages/fast
+
+# Convenience name for target.
+proje/CMakeFiles/_proje_generate_messages_check_deps_objectpx.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/_proje_generate_messages_check_deps_objectpx.dir/rule
+.PHONY : proje/CMakeFiles/_proje_generate_messages_check_deps_objectpx.dir/rule
+
+# Convenience name for target.
+_proje_generate_messages_check_deps_objectpx: proje/CMakeFiles/_proje_generate_messages_check_deps_objectpx.dir/rule
+
+.PHONY : _proje_generate_messages_check_deps_objectpx
+
+# fast build rule for target.
+_proje_generate_messages_check_deps_objectpx/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/_proje_generate_messages_check_deps_objectpx.dir/build.make proje/CMakeFiles/_proje_generate_messages_check_deps_objectpx.dir/build
+.PHONY : _proje_generate_messages_check_deps_objectpx/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_generate_messages_cpp.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_generate_messages_cpp.dir/rule
+.PHONY : proje/CMakeFiles/proje_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+proje_generate_messages_cpp: proje/CMakeFiles/proje_generate_messages_cpp.dir/rule
+
+.PHONY : proje_generate_messages_cpp
+
+# fast build rule for target.
+proje_generate_messages_cpp/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_generate_messages_cpp.dir/build.make proje/CMakeFiles/proje_generate_messages_cpp.dir/build
+.PHONY : proje_generate_messages_cpp/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_genpy.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_genpy.dir/rule
+.PHONY : proje/CMakeFiles/proje_genpy.dir/rule
+
+# Convenience name for target.
+proje_genpy: proje/CMakeFiles/proje_genpy.dir/rule
+
+.PHONY : proje_genpy
+
+# fast build rule for target.
+proje_genpy/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_genpy.dir/build.make proje/CMakeFiles/proje_genpy.dir/build
+.PHONY : proje_genpy/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_gencpp.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_gencpp.dir/rule
+.PHONY : proje/CMakeFiles/proje_gencpp.dir/rule
+
+# Convenience name for target.
+proje_gencpp: proje/CMakeFiles/proje_gencpp.dir/rule
+
+.PHONY : proje_gencpp
+
+# fast build rule for target.
+proje_gencpp/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_gencpp.dir/build.make proje/CMakeFiles/proje_gencpp.dir/build
+.PHONY : proje_gencpp/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_geneus.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_geneus.dir/rule
+.PHONY : proje/CMakeFiles/proje_geneus.dir/rule
+
+# Convenience name for target.
+proje_geneus: proje/CMakeFiles/proje_geneus.dir/rule
+
+.PHONY : proje_geneus
+
+# fast build rule for target.
+proje_geneus/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_geneus.dir/build.make proje/CMakeFiles/proje_geneus.dir/build
+.PHONY : proje_geneus/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_generate_messages_lisp.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_generate_messages_lisp.dir/rule
+.PHONY : proje/CMakeFiles/proje_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+proje_generate_messages_lisp: proje/CMakeFiles/proje_generate_messages_lisp.dir/rule
+
+.PHONY : proje_generate_messages_lisp
+
+# fast build rule for target.
+proje_generate_messages_lisp/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_generate_messages_lisp.dir/build.make proje/CMakeFiles/proje_generate_messages_lisp.dir/build
+.PHONY : proje_generate_messages_lisp/fast
+
+# Convenience name for target.
+proje/CMakeFiles/proje_genlisp.dir/rule:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f CMakeFiles/Makefile2 proje/CMakeFiles/proje_genlisp.dir/rule
+.PHONY : proje/CMakeFiles/proje_genlisp.dir/rule
+
+# Convenience name for target.
+proje_genlisp: proje/CMakeFiles/proje_genlisp.dir/rule
+
+.PHONY : proje_genlisp
+
+# fast build rule for target.
+proje_genlisp/fast:
+	cd /home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/build && $(MAKE) -f proje/CMakeFiles/proje_genlisp.dir/build.make proje/CMakeFiles/proje_genlisp.dir/build
+.PHONY : proje_genlisp/fast
 
 src/trajectory.o: src/trajectory.cpp.o
 
@@ -290,19 +470,31 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
-	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... trajectory"
-	@echo "... nav_msgs_generate_messages_py"
-	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... proje_generate_messages_nodejs"
+	@echo "... proje_gennodejs"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... nav_msgs_generate_messages_cpp"
+	@echo "... nav_msgs_generate_messages_lisp"
+	@echo "... proje_generate_messages_eus"
+	@echo "... nav_msgs_generate_messages_nodejs"
+	@echo "... list_install_components"
+	@echo "... nav_msgs_generate_messages_py"
+	@echo "... proje_generate_messages_py"
+	@echo "... proje_generate_messages"
+	@echo "... install/strip"
+	@echo "... _proje_generate_messages_check_deps_objectpx"
+	@echo "... proje_generate_messages_cpp"
+	@echo "... install"
+	@echo "... proje_genpy"
+	@echo "... proje_gencpp"
+	@echo "... install/local"
+	@echo "... proje_geneus"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... proje_generate_messages_lisp"
+	@echo "... proje_genlisp"
 	@echo "... src/trajectory.o"
 	@echo "... src/trajectory.i"
 	@echo "... src/trajectory.s"

@@ -3,6 +3,6 @@ prefix=/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel
 Name: proje
 Description: Description of proje
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel/include
 Libs: -L${prefix}/lib 
-Requires: 
+Requires: message_runtime

@@ -2,4 +2,4 @@
 source_root_dir = '/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/opt/ros/noetic'.split(';') if '/opt/ros/noetic' != '' else []
+underlay_workspaces = '/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel;/opt/ros/noetic'.split(';') if '/home/parsa/Projects/ytu-robotics/Robotics/homeworks_ws4/devel;/opt/ros/noetic' != '' else []
