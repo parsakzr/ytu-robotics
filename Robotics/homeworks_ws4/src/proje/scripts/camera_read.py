@@ -4,7 +4,7 @@ import rospy
 import cv2
 import numpy as np
 import imutils
-from pyzbar.pyzbar import decode
+from pyzbar.pyzbar import decode, ZBarSymbol
 import os
 import sys
 
@@ -81,7 +81,7 @@ def mask_barrel(frame):
 
 class CameraReader:
 
-  def __init__(self, hazmat_dir):
+  def __init__(self, hazmat_dir, model_path):
       self.hazmat_templates = {}
       print("HAZMAT_DIR:", hazmat_dir)
       for file in os.listdir(hazmat_dir):
@@ -89,6 +89,13 @@ class CameraReader:
           # Read image as BGR
           img = cv2.imread(os.path.join(hazmat_dir, file))
           self.hazmat_templates[file[:-4]] = img
+      
+      print(f"model_path: {model_path}")
+      self.detector = cv2.wechat_qrcode_WeChatQRCode(model_path+"detect.prototxt",
+                                                model_path+"detect.caffemodel",
+                                                model_path+"sr.prototxt",
+                                                model_path+"sr.caffemodel")
+      print(f"WeChatQRCode loaded: {self.detector}")
 
     
   
@@ -221,8 +228,8 @@ class CameraReader:
   def read_qr(self, frame, bbox):
     # frame_bw = self.preprocess_image(frame, threshhold=-40, ,verbose=True)
     frame_bbox = frame[bbox[1]:bbox[3], bbox[0]:bbox[2]]
-    # cv2.imshow("QRCode - bbox", frame_bbox)
-    decodedObjects = decode(frame_bbox)
+    cv2.imshow("QRCode - bbox", frame_bbox) # LOG
+    decodedObjects = decode(frame_bbox, symbols=[ZBarSymbol.QRCODE])
     for obj in decodedObjects:
       txt = obj.data.decode("utf-8")
       print(txt)
@@ -233,16 +240,31 @@ class CameraReader:
 
     return None
 
+  def read_qr_wechat(self, frame, bbox):
+    # frame_bw = self.preprocess_image(frame, threshhold=-40, ,verbose=True)
+    frame_bbox = frame[bbox[1]:bbox[3], bbox[0]:bbox[2]]
+    cv2.imshow("QRCode - bbox", frame_bbox) # LOG
+    res, points = self.detector.detectAndDecode(frame_bbox)
+    
+    if len(res) > 0:
+      print(res[0]) # output the first result
+      # # draw lines around the QR code
+      # n = len(points)
+      # for i in range(n):
+      #   cv2.line(frame_bbox, tuple(points[0][i]), tuple(points[0][(i+1)%n]), (255,0,0), 5)
+      return res[0]
+    
+    return None
 
   def find_signs(self, frame): # either hazmat or qr code
     # preprocess the image
-    frame_bw = self.preprocess_image(frame, threshhold=-35, removeBG=True)
+    frame_bw = self.preprocess_image(frame, threshhold=-35, removeBG=True, verbose=True)
 
     # detect the contours
     contours, _ = cv2.findContours(frame_bw, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
     # filter out the contours that are too small or too big
-    contours = [cnt for cnt in contours if cv2.contourArea(cnt) > 2000 and cv2.contourArea(cnt) < 50000]
+    contours = [cnt for cnt in contours if cv2.contourArea(cnt) > 2500 and cv2.contourArea(cnt) < 100000]
 
     # Find the squares
     squares = []
@@ -262,7 +284,7 @@ class CameraReader:
       cx, cy = int(x + w/2), int(y + h/2)
       if y==0 or y+h==frame.shape[0]: # ignore the squeres on the top and bottom of the frame
         continue
-      if angle > 35 and angle < 55: # 45+-10
+      if (angle > 35 and angle < 55) or (angle>-55 and angle<-35): # 45+-10
         # sign is a hazmat sign
         cv2.drawContours(frame, [cnt], -1, (0, 255, 255), 1)
         txt = self.read_hazmat(frame, (x, y, x+w, y+h), threshhold=0)
@@ -275,8 +297,9 @@ class CameraReader:
         central_points.append({'type': 'hazmat', 'p': (cx, cy), 'txt': txt})
       else:
         # sign is supposed to a QR code
+        # txt = self.read_qr(frame, (x, y, x+w, y+h))
+        txt = self.read_qr_wechat(frame, (x, y, x+w, y+h))
         cv2.drawContours(frame, [cnt], -1, (0, 255, 255), 1)
-        txt = self.read_qr(frame, (x, y, x+w, y+h))
         if txt:
           cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
           cv2.putText(frame, txt, (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
@@ -311,9 +334,12 @@ class camera_1:
     self.object_pub = rospy.Publisher(OBJECT_TOPIC, objectpx_msg, queue_size=10)
 
     hazmat_dir = rospy.get_param("/camera_read/hazmat_dir")
-    camreader = CameraReader(hazmat_dir)
+    # load the wechat qrcode detector
+    model_path = rospy.get_param("/camera_read/wechat_dir")
+    camreader = CameraReader(hazmat_dir, model_path)
     self.cameraReader = camreader
 
+    
     print(f"camera_1 initilized on {CAMERA_TOPIC}")
   
   def publish_frame(self, frame):

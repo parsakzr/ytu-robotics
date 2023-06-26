@@ -22,6 +22,7 @@
 	<!-- <node name= "camera_read" pkg= "proje" type="camera_read.py" output="screen" required = "true"/> -->
 	<node name= "camera_read" pkg= "proje" type="camera_read.py" output="screen" required = "true">
 		<param name="hazmat_dir" value="$(find proje)/img/hazmat_template/"/>
+		<param name="wechat_dir" value="$(find proje)/model/wechat-qrcode/"/>
 	</node>
 
 	<!-- MAPPING -->
